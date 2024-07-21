@@ -1,0 +1,16 @@
+import "./App.css";
+import { Button, Checkbox } from "./components";
+import { CheckboxWrapper } from "./wrappers";
+
+function App() {
+  return (
+    <div>
+      <h1>Hello world</h1>
+      <Button label={"Done"} />
+      <Checkbox />
+      <CheckboxWrapper />
+    </div>
+  );
+}
+
+export default App;
