@@ -1,18 +1,17 @@
+/* eslint-disable react/prop-types */
 import { Tick } from "../assets";
 import { useState } from "react";
 
-const Checkbox = () => {
-  const [isActive, setIsActive] = useState(false);
+const Checkbox = ({isActive=false}) => {
   const [isPressed, setIsPressed] = useState(false);
 
   const toggleCheckbox = () => {
-    setIsActive(!isActive);
+    isActive = !isActive;
   };
 
   return (
-    <div>
       <div
-        className={`w-6 h-6 rounded-md flex items-center justify-center ${
+        className={`w-6 h-6 rounded-md flex items-center justify-center cursor-pointer ${
           isActive
             ? "bg-blue hover:bg-blue-faded border-blue hover:border hover:border-blue-faded active:border-blue-faded"
             : "border border-secondary-faded hover:border-secondary"
@@ -39,9 +38,6 @@ const Checkbox = () => {
           />
         </div>
       </div>
-      <h1 className="text-blue">{isPressed.toString()}</h1>
-      <h2>{isActive.toString()}</h2>
-    </div>
   );
 };
 
