@@ -7,7 +7,9 @@ export default {
       "primary-faded": "#FFD84D",
       secondary: "#BDBDBD",
       "secondary-faded": "#CDCDCD",
-      blue: "#5087F8",
+      blue: "#2469F6",
+      "blue-faded": "#5087F8",
+      "blue-light": "#90caf9",
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
